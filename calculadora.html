@@ -14,8 +14,6 @@
 
         }
 
-
-
         function restar(num1, num2) {
 
             let operacion = parseInt(num1) - parseInt(num2);
@@ -23,13 +21,54 @@
 
         }
 
-        function calculadora() {
-            var num1 = prompt("ingrese num1 para sumar y luego restar");
-            var num2 = prompt("ingrese num2 para sumar y luego restar");
-            console.log(sumar(num1, num2));
-            console.log(restar(num1, num2));
+        function multiplicar(num1, num2) {
+
+            let operacion = parseInt(num1) * parseInt(num2);
+            return operacion
+
         }
 
+        function dividir(num1, num2) {
+
+            let operacion = parseInt(num1) / parseInt(num2);
+            return operacion
+
+        }
+
+        function menu() {
+            console.log("1. Sumar");
+            console.log("2. Restar");
+            console.log("3. Dividir");
+            console.log("4. Multiplicar");
+            console.log("Seleccione una opcion: ");
+
+
+        }
+
+        function calculadora() {
+            var seleccion = prompt("Ingrese su seleccion:");
+            var num1 = prompt("ingrese num1 para la operacion seleccionada");
+            var num2 = prompt("ingrese num2 para la operacion seleccionada");
+
+            if (seleccion == 1) {
+                console.log(sumar(num1, num2));
+            }
+
+            if (seleccion == 2) {
+                console.log(restar(num1, num2));
+            }
+
+            if (seleccion == 3) {
+                console.log(sumar(num1, num2));
+            }
+
+            if (seleccion == 4) {
+                console.log(sumar(num1, num2));
+            }
+
+
+        }
+        menu();
         calculadora();
     </script>
 </head>
